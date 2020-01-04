@@ -1,19 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Simple Sidebar - Start Bootstrap Template</title>
-
-  <!-- Bootstrap core CSS -->
   <link href="../Dependencies/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
   <link href="../Styles/sidebar.css" rel="stylesheet">
 
 </head>
@@ -24,10 +14,10 @@
 
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Start Bootstrap </div>
+      <div class="sidebar-heading">Sistema </div>
       <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
+        <a href="register.php" class="list-group-item list-group-item-action bg-light">Cadastro</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Registro de Usuários</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
@@ -40,7 +30,7 @@
     <div id="page-content-wrapper">
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+        <button class="btn btn-primary" id="menu-toggle">Menu</button>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -49,21 +39,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+              <a class="nav-link" href="index.php">Início<span class="sr-only"></span></a>
             </li>
           </ul>
         </div>
