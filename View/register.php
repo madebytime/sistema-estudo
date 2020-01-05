@@ -52,37 +52,39 @@
             <div class="container-fluid">
                 <h3 class="mt-4">Cadastro de Usuários</h3>
 
-                <form id="formulario">
+                <form method="POST" action='Queries/registration.php'>
                     <div class="form-row">
                         <div class="form-group col-md-3">
                             <label>Nome</label>
-                            <input type="text" class="form-control" required>
+                            <input type="text" class="form-control" required name='user_nome' id='user_nome'>
                         </div>
                         <div class="form-group col-md-4">
                             <label>Sobrenome</label>
-                            <input type="text" class="form-control" required>
+                            <input type="text" class="form-control" required name='user_sobrenome' id='user_sobrenome'>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-3">
                             <label>Data de Nascimento</label>
-                            <input type="date" class="form-control" required>
+                            <input type="date" class="form-control" required name='user_nascimento' id='user_nascimento'> 
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label>Endereço</label>
-                            <input type="text" class="form-control" placeholder="Rua dos Devs, Num 42" required>
+                            <input type="text" class="form-control" placeholder="Rua dos Devs, Num 42" name='user_endereco'
+                            id='user_endereco' required >
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-2">
                             <label>Telefone</label>
-                            <input type="text" class="form-control" maxlength="11" minlength="11" required>
+                            <input type="text" class="form-control" maxlength="11" minlength="11" required name='user_telefone' 
+                            id='user-telefone'>
                         </div>
                         <div class="form-group col-md-4">
                             <label>E-mail</label>
-                            <input type="email" class="form-control">
+                            <input type="email" class="form-control" required name='user_email' id='user_email'>
                         </div>
                     </div>
 
@@ -90,16 +92,18 @@
                     <div class="form-row">
                         <div class="form-group col-md-2">
                             <label>CPF</label>
-                            <input type="text" class="form-control" maxlength="11" minlength="11" required>
+                            <input type="text" class="form-control" maxlength="11" minlength="11"
+                            name='user_cpf' id='user_cpf' required>
                         </div>
 
                         <div class="form-group col-md-2">
                             <label>RG</label>
-                            <input type="text" class="form-control" maxlength="9" minlength="9" required>
+                            <input type="text" class="form-control" maxlength="9" minlength="9"
+                            name='user_rg' id='user_rg'required>
                         </div>
                         <div class="form-group col-md-2">
                             <label>Sexo</label>
-                            <select class="form-control" required >
+                            <select class="form-control" required  name='user_sexo' id='user_sexo'>
                                 <option selected>Escolha</option>
                                 <option value='Masculino'>Masculino</option>
                                 <option value='Feminino'>Feminino</option>
@@ -107,7 +111,7 @@
                         </div>
                     </div>
 
-                    <button type="submit"  name='submit' id='submit' class="btn btn-primary">
+                    <button type="submit"  class="btn btn-primary">
                         Cadastrar
                     </button>
                     <span id='error_message' class='text-danger'></span>
@@ -124,7 +128,6 @@
         $("#wrapper").toggleClass("toggled");
     });
     </script>
-
 </body>
 
 </html>

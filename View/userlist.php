@@ -48,35 +48,43 @@
             <div class="container-fluid">
                 <h3 class="mt-4">Registro de Usuários</h3>
                 <table class="table table-hover">
+                  <?php 
+                  require('read.php');
+                  
+                  ?>
+    <?php include('read.php')?>              
     <thead>
       <tr>
         <th>Nome</th>
         <th>Sobrenome</th>
         <th>Data de Nasicimento</th>
         <th>Endereço</th>
-        <th>Cep</th>
+        <th>Sexo</th>
         <th>Telefone</th>
         <th>CPF</th>
         <th>RG</th>
+        <th>E-mail</th>
+        <th>Butao</th>
 
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-      </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
-      </tr>
+    <?php foreach ($dados as $value) { ?>
+    <tr>
+      <td><?php echo $value['usua_nome'] ?></td> 
+      <td><?php echo $value['usua_sobrenome'] ?></td>
+      <td><?php echo $value['usua_nascimento'] ?></td>
+      <td><?php echo $value['usua_endereco'] ?></td>
+      <td><?php echo $value['usua_sexo'] ?></td>
+      <td><?php echo $value['usua_telefone'] ?></td>
+      <td><?php echo $value['usua_cpf'] ?></td>
+      <td><?php echo $value['usua_rg'] ?></td>
+      <td><?php echo $value['usua_email'] ?></td>
+      <td><a href="destroy.php?=<?php echo $value['cod_users'] ?>" class="btn btn-danger">Delete</a></td>
+      
+    </tr>
+    <?php } ?>
+
     </tbody>
   </table>
                
