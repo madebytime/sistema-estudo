@@ -18,7 +18,7 @@
             <div class="list-group list-group-flush">
                 <a href="register.php" class="list-group-item list-group-item-action bg-light">Cadastro</a>
                 <a href="userlist.php" class="list-group-item list-group-item-action bg-light">Registro de Usuários</a>
-                <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
+                <a href="classes.php" class="list-group-item list-group-item-action bg-light">Turmas</a>
                 <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
                 <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
                 <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
