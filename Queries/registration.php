@@ -15,8 +15,8 @@ try {
     $data = implode("-",array_reverse(explode("/",$data)));
     $_POST['user_nascimento'] = $data;
     //inserção de dados no banco de dados
-    $sql = "INSERT INTO users(usua_nome, usua_sobrenome, usua_nascimento,usua_endereco,usua_telefone,usua_cpf,usua_rg,usua_sexo, usua_email) VALUES ('$user_nome','$user_sobrenome','$user_nascimento',
-    '$user_endereco','$user_telefone','$user_cpf','$user_rg','$user_email','$user_sexo')";
+    $sql = "INSERT INTO users(cod_perfil, cod_curso, usua_nome, usua_sobrenome, usua_nascimento,usua_endereco,usua_telefone,usua_cpf,usua_rg,usua_sexo, usua_email) 
+    VALUES ('1','1','$user_nome','$user_sobrenome','$user_nascimento','$user_endereco','$user_telefone','$user_cpf','$user_rg','$user_email','$user_sexo')";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
     echo $stmt->rowCount();
